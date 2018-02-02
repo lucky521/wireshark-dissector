@@ -14,8 +14,17 @@ There are multiple method to parse wirshark pcap, in real time or offtime.
 
 
 ## Parse your pcap file using Python
+
+有不少python 3rd library提供了解析报文的功能，比如dpkt。
 Dpkt pylib is a fast and simple packet creation / parsing, with definitions for the basic TCP/IP protocols.
 我可以在其基础上再自定义解析应用层数据包。
+
+
+## Parse your pcap file using C++/libpcap
+
+使用libpcap来解析报文是最直接的方式。
+主要的接口函数有pcap_findalldevs, pcap_lookupdev, pcap_lookupnet, pcap_open_live, pcap_compile, pcap_setfilter, pcap_loop.
+
 
 
 ## Reference
